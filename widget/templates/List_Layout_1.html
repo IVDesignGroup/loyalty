@@ -14,7 +14,10 @@
                                     ng-click="WidgetHome.openLogin()">Log in
           or register</a></span> to
           get points</p>
-
+<p ng-if="WidgetHome.currentLoggedInUser && WidgetHome.currentLoggedInUser._id">
+  Get rewarded when you shop local!<br/>Earn 1 point for every dollar spent.
+        </p>
+        
         <p ng-if="WidgetHome.currentLoggedInUser && WidgetHome.currentLoggedInUser._id">
           You currently have <span
             class="text-primary">{{loyaltyPoints}}</span> points.
